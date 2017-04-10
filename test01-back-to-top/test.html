@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>back-to-top</title>
+  
+  <style>
+  #backToTop{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+  }
+  </style>
+  
+</head>
+<body>
+  <button id='backToTop'>回到顶部</button>
+  <h1>回到顶部</h1>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+ <p>item</p>
+
+   <script>
+     var button = document.getElementById('backToTop');
+//console.log(window.scrollY);
+button.onclick = function () {
+
+    //console.log(window.scrollY);
+    let height = window.scrollY;
+    let n = 1;
+    let id = setInterval(function () {
+        //console.log(n);
+        if (n === 20) {
+            clearInterval(id);
+        }
+        window.scrollBy(0, - height * n / 20);
+        n += 1;
+    }, 50);
+
+
+};
+   </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tazbingo blog</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        body {
+            font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1000px;
+            background: #EAEEF1;
+        }
+        /* page style */
+
+        #header {
+            padding-bottom: 34px;
+            padding-top: 54px;
+            background: #4D4D4D;
+        }
+
+        #header .logo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 70px;
+        }
+
+        #header .logo {
+            text-align: center;
+            margin-bottom: 22px;
+        }
+
+        #header .title {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #header .title li {
+            line-height: 24px;
+            background-color: #D8D8D8;
+            margin: 12px 16px;
+            width: 128px;
+            border-radius: 4px;
+        }
+        /* second section */
+
+        #synopsis {
+            text-align: center;
+            background: url(http://i2.buimg.com/1949/8dce70940537f5df.png);
+
+            padding-top: 55px;
+            padding-bottom: 50px;
+            /*filter: blur(5px);*/
+        }
+
+        #synopsis h1 {
+            max-width: 360px;
+            line-height: 40px;
+            margin-bottom: 21px;
+            margin-left: auto;
+            margin-right: auto;
+            /*filter: blur(0px);*/
+            color: #ffffff;
+            font-size: 40px;
+        }
+
+        #synopsis p {
+            line-height: 24px;
+            max-width: 770px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 19px;
+            color: #ffffff;
+            font-size: 20px;
+            /*filter: blur(0px);*/
+        }
+
+        @media (min-width:450px) {
+            #header .title {
+                display: flex;
+                justify-content: center;
+            }
+            #header .title li {
+                margin: 0 16px;
+                text-align: center;
+            }
+            #synopsis {
+                text-align: center;
+                background: url(http://i2.buimg.com/1949/8dce70940537f5df.png);
+                padding-top: 75px;
+                padding-bottom: 100px;
+            }
+            #synopsis .sword h1 {
+                display: inline;
+            }
+        }
+        /* three section */
+
+        #content ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: #fff;
+            padding-top: 10px;
+            padding-bottom: 16px;
+        }
+
+        #content li img {
+            width: 288px;
+            margin-bottom: 20px;
+        }
+
+        #content ul li {
+            width: 288px;
+            margin-top: 32px;
+        }
+
+        #content li h3 {
+            font-size: 18px;
+            margin-bottom: 14px;
+            background: #f8f4ea;
+            display: inline-block;
+            border-radius: 3px;
+        }
+
+        #content li p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 12px;
+            background: #ECECEC;
+        }
+
+        @media (max-width: 800px) {
+            #content .play {
+                display: none;
+            }
+            #content ul {
+                justify-content: center;
+            }
+            #content ul li {
+                width: 45%;
+            }
+            #content li img {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            #content .hidden {
+                display: none;
+            }
+            #content ul li {
+                width: 90%;
+            }
+            #content li img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<section id="header">
+    <div class="logo">
+        <img src="http://i4.buimg.com/1949/93c81d72f395d1cc.png" alt="">
+    </div>
+
+    <ul class="title">
+        <li>JavaScript DOM 编程艺术</li>
+        <li>JavaScript 高级程序设计</li>
+        <li>深入理解计算机系统</li>
+        <li>鸟哥的Linux私房菜</li>
+    </ul>
+
+</section>
+<section id="synopsis">
+    <div class="sword">
+        <h1>《JavaScript DOM》</h1>
+        <h1>何为DOM?</h1>
+    </div>
+    <p>DOM是一套对文档的内容进行抽象和概念化的方法。</p>
+    <p>DOM,即 Document Object Model，也就是文档对象模型</p>
+</section>
+<section id="content">
+    <ul>
+        <li>
+            <img src="http://i4.buimg.com/1949/2715c48d2f93bb6c.jpg" alt="">
+            <h3>第一章 JavaScript简史</h3>
+            <p>当页面设计人员谈论起与Web标准有关的话题时,HTML和CSS通常占有核心地位.不过,W3C已批准另外一项技术,所有与标准相兼容的Web浏览器都支持它,这就是DOM.我们可以利用DOM文档增加交互能力,就像利用CSS给文档添加各种样式一样.</p>
+        </li>
+        <li>
+            <img src="http://i4.buimg.com/1949/be8070aa426d7ca2.png" alt="">
+            <h3>第二章 JavaScript语法</h3>
+            <p>对象,Object是一种非常重要的数据类型,但此前我们还没有认真对待它.对象是包含的数据集合,包含在对象里的数据可以通过两种形式访问————属性（property）和方法（method）：属性是隶属于某个特定对象的变量，方法是只有某个特定对象才能调用的函数，总而言之，对象就是由一些属性和方法组合在一起构成的一个数据实体</p>
+        </li>
+        <li>
+            <img src="http://i4.buimg.com/1949/b9acf33fae5c934c.jpg" alt="">
+            <h3>第三章 DOM</h3>
+            <p>DOM五虎:getElementById、getElementsByTagName、getElementsByClassName、geAttribute、setAttribute</p>
+        </li>
+        <li>
+            <img src="http://i1.piimg.com/1949/05a12b6b11d859a0.jpg" alt="">
+            <h3>第四章 JavaScript图片库</h3>
+            <p>若想两全其美,利用JavaScript来创建图片库将是最佳的选择:将整个图片库的浏览链接集中安排在图片库主页里,只在用户点击了这个主页里的某个图片时才把相应的图片传送给他</p>
+        </li>
+        <li>
+            <img src="http://i1.piimg.com/1949/a64d4f0fad4f1142.jpg" alt="">
+            <h3>第五章 Best Pravtices</h3>
+            <p>不管你想通过JavaScript改变哪个网页的行为,都必须三思而后行.首先要确认:这个网页增加这种额外的行为是否确有必要?网站对JavaScript的滥用已经持续了相当长的时间,因为滥用JavaScript而给自己带来种种麻烦的网站页绝对不是少数.</p>
+        </li>
+        <li class="hidden">
+            <img src="http://i1.piimg.com/1949/b5fb0b37090d2621.jpg" alt="">
+            <h3>第六章 图片库改进</h3>
+            <p>改进图片库,"勤于思考"是每一位有创新精神的网页设计人员都应该具有的特质.无论编写CSS脚本还是JavaScript脚本,也无论是直接编写代码还是使用可视化设计工具,一名优秀的网页设计人员总是胡子爱每个细节上问自己这样一个问题"是否有更好的解决方法?"与DOM脚本编程工作有关的问题不外乎平稳退化,向后兼容和分离JavaScript这几大类.这些问题的解决方式和解决程度影响着网页的可用性和可访问性.</p>
+        </li>
+        <li class="hidden play">
+            <img src="http://i1.piimg.com/1949/dbf01295b448f292.jpg" alt="">
+            <h3>第七章 动态创建标记</h3>
+            <p>Ajax 使用Ajax可以做到只更新页面中的一小部分，其它内容不用重新加载 Ajax的主要优势是对页面的请求以异步方式发送到服务器。 XMLHttpRequest对象 浏览器脚本与服务器之间的中间人的角色。 JavaScript可以通过这个对象自己发送请求，同时自己处理响应。
+                问题在于不同浏览器实现XMLHttpRequest对象的方式不太一样。 微软最早在IE5中以ActiveX对象的形式实现了一个名叫XMLHTTP的对象，其它浏览器基于XMLHttpRequest来创建新对象：
+                该对象最有用的是open方法：用来指定服务器上将要访问的文件，指定请求类型：GET、POST或SEND。 访问服务器发送回来的数据要通过两个属性完成，一个是responseText属性，这个属性用于保存文本字符串形式的数据，另一个属性是responseXML属性，用于保存Content-Type头部中指定为text/xml的数据。使用Ajax需要注意同源策略：使用XMLHttpRequest对象发送的请求只能访问与其所在的HTML处于同一个域中的数据，不能像其它域发送请求，有些浏览器还会限制Ajax请求使用的协议
+                异步性：脚本在发送XMLHttpRequest请求之后，仍然会继续执行，不会等待响应返回。XMLHttpRequest对象实际上非常简单，不过只要发挥一点想象力，就可以达成令人炫目的效果。
+            </p>
+        </li>
+        <li class="hidden play">
+            <img src="http://i1.piimg.com/1949/d27f58ff37a19dbc.png" alt="">
+            <h3>第8章 充实文档内容</h3>
+            <p>创建了一个“略缩语”列表的函数遍历文档中的abbr元素——保存abbr元素的title属性——保存每个abbr元素所包含的文本——创建了一个定义列表元素——把每个title属性插入表格；</p>
+        </li>
+        <li class="hidden play">
+            <img src="http://i2.buimg.com/1949/28e1c65f674be08d.jpg" alt="">
+            <h3>第9章 CSS-DOM</h3>
+            <p>1、三位一体的网页： 结构层 —表示层 —行为层 2、CSS利用伪类走进DOM的领地，DOM也可以设置样式 3、style属性是一个对象； 4、减号和加号之类的操作符是保留字符，不允许用在函数或变量的名字里，同时意味着它们也不能用在方法或属性的名字里。
+                当你需要引用一个中间带减号的CSS属性时，DOM要求你用驼峰命名法。CSS属性font-family变成ＤＯＭ属性fontFamily 5、color属性以RGB格式的颜色值返回； 6、在设置CSS font-size属性为em为单位，相应的DOM　fontSize属性也将以em为单位；在设置CSS
+                font-size属性为px为单位，相应的DOM　fontSize属性也将以px为单位 7、style属性只能返回内嵌样式；来自外部文件的style.css及放在 head部分的样式不能再用DOM style属性检索出来了；
+                8、可以用赋值符操作；element.style.property=value; 9、使用DOM脚本设置样式的时机有以下几种： 根据元素在节点树里的位置来设置样式，根据某种条件反复设置某种样式，响应事件；
+                10、在决定是采用纯粹的CSS来解决，还是利用DOM来设置样式。需要考虑两个因素： 这个问题最简单的解决方案是什么 那种解决方案会得到更多浏览器的支持 11、通过更改className属性来实现样式的更改；
+                elem.setAttribute("class:,:intro"); element.className=value; (以上两种是替换而不是追加） elem.className +="intro";追加
+                12、对函数进行抽象： 把一个非常具体的东西改进为一个较为通用的东西的过程叫做抽象化（abstraction），把一些常用函数进行抽象化是非常有好处的；
+            </p>
+        </li>
+
+        <li class="hidden play">
+            <img src="http://i2.buimg.com/1949/f1ca835d410989d7.png" alt="">
+            <h3>第10章 用JavaScript实现动画效果</h3>
+            <p>动画的含义：让元素的位置随着时间而不断地发生变化。本章主要是定义了一个位置随时间运动的函数，而后把它应用到了一个实际的例子.</p>
+        </li>
+
+        <li class="hidden play">
+            <img src="http://i2.buimg.com/1949/0ce8909d8ef7af95.png" alt="">
+            <h3>第11章 HTML5</h3>
+            <p>本章简要的介绍了什么是HTML5，以及如何使用HTML5，最后对HTML5中一些诸如Canvas，视频，音频和表单等特性进行了介绍，本书关于本章的内容，我并没有做太多笔记，以后跟大家分享我看过的关于HTML5书籍的笔记。</p>
+        </li>
+
+        <li class="hidden play">
+            <img src="http://i2.buimg.com/1949/d7ca2a2f1024ee94.png" alt="">
+            <h3>第12章 综合示例</h3>
+            <p>实践!从DOM到简单网站的创建!
+            </p>
+        </li>
+    </ul>
+</section>
+</body>
+
+</html>

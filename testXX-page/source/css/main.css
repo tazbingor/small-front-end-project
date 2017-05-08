@@ -138,14 +138,31 @@ margin-top: 20px;
 }
 
 /*introduce end*/
-#products >ul{
+#products{
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background: #ddd;
+}
+
+#products >.inner{
     max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#products h2{ margin-bottom: 1em; }
+
+#products ul{
+    max-width: 500px;
     margin:0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-#products >ul>li{
+#products ul>li{
     margin-left: 20px;
+    margin-right: 20px;
 }

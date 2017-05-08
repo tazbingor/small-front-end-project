@@ -1,7 +1,62 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*reset*/
+ul, ol {
+    list-style: none;
+}
+
+/*topbar*/
+
+#topbar {
+    background: #666;
+}
+
+#topbar > .inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#topbar > .inner::after, #topbar::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#topbar .logo {
+    float: left;
+}
+
+#topbar .logo > img {
+    vertical-align: top;
+    /*margin-left: 60px;*/
+}
+
+#topbar nav {
+    float: right;
+    margin-top: 20px;
+}
+
+/*topbar end*/
+
+/*banner 轮播*/
+#siteBanner{
+
+}
+
+
+#siteBanner #siteBannerSlides{
+    max-width: 960px;
+    margin: 0 auto;
+}
 

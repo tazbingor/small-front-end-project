@@ -109,9 +109,9 @@ margin-top: 20px;
     display: flex;
     margin: 24px 0;
     justify-content: space-between;
-    align-content: center;
-    text-align: center;
-    font-size: 40px;
+    align-items: center;
+    /*text-align: center;*/
+    /*font-size: 40px;*/
 }
 
 #introduce ul>li>p{
@@ -138,6 +138,9 @@ margin-top: 20px;
 }
 
 /*introduce end*/
+
+/*products*/
+
 #products{
     padding-top: 88px;
     padding-bottom: 88px;
@@ -165,4 +168,16 @@ margin-top: 20px;
 #products ul>li{
     margin-left: 20px;
     margin-right: 20px;
+}
+/*products end*/
+
+#album{
+    padding:2em 0;
+}
+#album >.inner{
+    max-width: 960px;
+    margin:0 auto;
+}
+#album ul{
+
 }

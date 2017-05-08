@@ -53,6 +53,17 @@ ul, ol {
 margin-top: 20px;
 }
 
+#siteBannerSlides .swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets {
+
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+}
 #siteBannerSlides > ul.slidesjs-pagination{
     position: absolute;
     bottom: 0;
@@ -171,13 +182,22 @@ margin-top: 20px;
 }
 /*products end*/
 
-#album{
-    padding:2em 0;
+#album {
+    padding: 2em 0;
 }
-#album >.inner{
-    max-width: 960px;
-    margin:0 auto;
-}
-#album ul{
 
+#album > .inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+#album ul {
+    display: flex;
+    align-items: center;
+}
+
+/* footer */
+body > footer {
+    background: #ddd;
+    padding: 1em 0;
+    text-align: center;
 }

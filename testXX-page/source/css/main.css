@@ -54,9 +54,42 @@ ul, ol {
 
 }
 
+#siteBannerSlides > ul.slidesjs-pagination{
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
 
-#siteBanner #siteBannerSlides{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+}
+
+#siteBannerSlides .slidesjs-container{
+    position: relative;
+    z-index: 1;
+}
+
+#siteBannerSlides{
+    position: relative;
     max-width: 960px;
     margin: 0 auto;
 }
 
+#siteBannerSlides .slidesjs-navigation{
+    position: absolute;
+    top:50%;
+    left: 0;
+    z-index: 2;
+
+}
+
+#siteBannerSlides > ul .slidesjs-pagination-item{
+    margin: 5px;
+}
+
+
+#siteBannerSlides .slidesjs-next{
+    left:auto;
+    right:0;
+}

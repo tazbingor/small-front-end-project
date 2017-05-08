@@ -17,7 +17,6 @@ ul, ol {
 }
 
 /*topbar*/
-
 #topbar {
     background: #666;
 }
@@ -51,7 +50,7 @@ ul, ol {
 
 /*banner 轮播*/
 #siteBanner{
-
+margin-top: 20px;
 }
 
 #siteBannerSlides > ul.slidesjs-pagination{
@@ -92,4 +91,61 @@ ul, ol {
 #siteBannerSlides .slidesjs-next{
     left:auto;
     right:0;
+}
+/*banner end*/
+
+
+/*introduce*/
+#introduce{
+    margin-left: 24px;
+}
+
+#introduce ul{
+    max-width: 960px;
+    margin:0 auto;
+}
+
+#introduce ul>li{
+    display: flex;
+    margin: 24px 0;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    font-size: 40px;
+}
+
+#introduce ul>li>p{
+    flex-grow:1;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*文字与图片错落*/
+#introduce ul>li:nth-child(odd)>p{
+    order: 2;
+}
+
+#introduce ul>li:nth-child(odd)>img{
+    order: 1;
+}
+
+#introduce ul>li:nth-child(even)>p{
+    order: 1;
+}
+
+#introduce ul>li:nth-child(even)>img{
+    order: 2;
+}
+
+/*introduce end*/
+#products >ul{
+    max-width: 960px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#products >ul>li{
+    margin-left: 20px;
 }

@@ -1,2 +1,12 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
 

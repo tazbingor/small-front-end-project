@@ -325,3 +325,100 @@ img.t-pic {
     font-style: italic;
     color: #303030;
 }
+
+/*----------------contact-----------*/
+.contact {
+    padding: 3em 0 6em;
+}
+
+.contact-map {
+
+}
+
+.contact-map p, .contact-form p {
+    font-size: 1.2em;
+    color: #5A5A5A;
+    margin: 0.5em 0 1em;
+    font-weight: 400;
+    display: block;
+}
+
+.contact-map iframe {
+    width: 100%;
+    min-height: 350px;
+    border: 8px solid #FFF;
+    box-shadow: 0px 0px 2px #999;
+    -webkit-box-shadow: 0px 0px 2px #999;
+    -moz-box-shadow: 0px 0px 2px #999;
+    -o-box-shadow: 0px 0px 2px #999;
+    -ms-box-shadow: 0px 0px 2px #999;
+}
+
+.contact-form textarea {
+    width: 100%;
+    min-height: 254px;
+    resize: none;
+    outline: none;
+    background: #F2F2F2;
+    padding: 0.8em;
+    font-family: 'Playball', cursive;
+    font-size: 1.3em;
+    color: #666;
+    border: 1px solid #DADADA;
+    transition: border-color 0.3s;
+    -o-transition: border-color 0.3s;
+    -ms-transition: border-color 0.3s;
+    -moz-transition: border-color 0.3s;
+    -webkit-transition: border-color 0.3s;
+}
+
+.contact-form input[type="text"] {
+    width: 65%;
+    background: #F2F2F2;
+    padding: 0.8em;
+    font-family: 'Playball', cursive;
+    font-size: 1.3em;
+    color: #666;
+    border: 1px solid #DADADA;
+    outline: none;
+    margin-right: 5%;
+    margin-top: 5%;
+    transition: border-color 0.3s;
+    -o-transition: border-color 0.3s;
+    -ms-transition: border-color 0.3s;
+    -moz-transition: border-color 0.3s;
+    -webkit-transition: border-color 0.3s;
+}
+
+.contact-form input[type="text"]:hover, .contact-form textarea:hover {
+    border-color: #6995A9;
+}
+
+.contact-form input[type="submit"] {
+    background: url(../images/upload.png) no-repeat 28px 17px #6995A9;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.93em 1em;
+    border: none;
+    width: 29.3%;
+    text-indent: 19px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: url(../images/upload.png) no-repeat 28px 17px #303030;
+}
+
+/* footer */
+body > footer {
+    background:#4F4F4F;
+    padding:1.5em 1em;
+    text-align: center;
+}

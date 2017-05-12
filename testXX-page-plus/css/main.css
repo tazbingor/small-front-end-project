@@ -178,3 +178,51 @@ nav a#pull {
         border-bottom: 1px solid #EEE;
     }
 }
+
+/*-------banner----------*/
+.banner{
+    background:url(../images/slide1.jpg) no-repeat 0px 0px;
+    min-height:580px;
+    background-size:100% 100%;
+}
+
+.banner-info h1 span{
+    display:block;
+}
+
+.banner-info h1{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 800;
+    line-height: 1.4em;
+    margin: 0em;
+}
+
+.banner-info h1 span{
+    display:block;
+}
+
+.banner-info p{
+    color: #7B7C7B;
+    font-family: 'Playball', cursive;
+    font-size: 1.3em;
+}
+
+
+.big-btn{
+    margin-top:2.5em;
+    display:inline-block;
+}
+a.big-btn span{
+    width:80px;
+    height:80px;
+    display:inline-block;
+    background:url(../images/big-btn.png) no-repeat 0px 0px;
+}
+a.big-btn span:hover{
+    opacity:0.8;
+}
+.banner-info{
+    margin-top: 13.5em;
+}

@@ -123,7 +123,7 @@ img {
 }
 
 .header .logo {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .header .search-bar {
@@ -220,4 +220,56 @@ img {
     float: left;
     margin-right: 10px;
 
+}
+.main-promote .content{
+    height:100%;
+}
+
+/*cat-promote*/
+
+/*cat-promote{*/
+
+/*}*/
+
+.cat-promote .title:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    width:5px;
+    height:30px;
+    background: #dd182b;
+    margin-right: 10px;
+}
+
+.cat-promote .title{
+font-size: 22px;
+}
+
+.cat-promote .item{
+    /*height:300px;*/
+    padding: 5px;
+    /*background: #ccc;*/
+}
+
+.cat-promote .card{
+    height: 300px;
+    background: #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1);
+    -moz-box-shadow:0 2px 2px rgba(0,0,0,.1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.1);
+}
+
+
+/*footer*/
+.footer{
+    text-align: center;
+    color: #999;
+    background: #eee;
+    padding: 30px 0;
+    margin-top:30px;
+}
+
+.footer a{
+    color: #999;
 }

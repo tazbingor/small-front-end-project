@@ -1,0 +1,26 @@
+/*reset*/
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*container*/
+.container{
+    max-width: 1080px;
+    margin:0 auto;
+    display: block;
+}
+
+/*float*/
+.fl{ float: left;}
+.fr{float: right;}
+
+/*清除浮动*/
+.clear-float:after,.clear-float:before{
+    content: ' ';
+    display: block;
+    clear: both;
+}

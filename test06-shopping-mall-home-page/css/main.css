@@ -5,13 +5,14 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    transition: background 200ms;
 
-    /*background: rgba(0,0,0,.1);*/
 }
 
 body {
     font-size: 14px;
     color: #444;
+    background: #f9f9f9;
 }
 
 a {
@@ -94,23 +95,83 @@ a {
 
 /*reset end */
 
-
 /*top-nav*/
 .top-nav {
     background: darkgray;
 }
-.top-nav .item{
+
+.top-nav .item {
     display: inline-block;
-    padding:6px 10px;
+    padding: 6px 10px;
     color: #666;
 }
 
 /*鼠标移动变色*/
-.top-nav .item:hover{
-    color:#00A2C1;
+.top-nav .item:hover {
+    color: #00A2C1;
 }
 
 /*header*/
-.header{
-    padding:20px 0;
+.header {
+    padding: 20px 0;
 }
+
+.header .logo {
+    font-size: 40px;
+}
+
+.header .search-bar {
+    border: 2px solid #dd182b;
+    background: #dd182b;
+
+}
+
+.header .search-bar input, .header .search-bar button {
+    border: 0;
+    padding: 10px;
+    display: block;
+    float: left;
+    outline: 0;
+
+}
+
+.header .search-bar input {
+    width: 80%;
+}
+
+.header .search-bar input:focus {
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, .3);
+}
+
+.header .search-bar button {
+    width: 20%;
+    background: #dd182b;
+    color: #fff;
+}
+
+.header .search-bar button:hover {
+    background: #ce1829;
+}
+
+.header .cart{
+    text-align: center;
+}
+
+.header .cart a{
+    float: right;
+    width: 80%;
+
+    padding:10px;
+    background: #fff;
+    border: 2px solid #EEE;
+    color: #dd182b;
+}
+
+.header .cart a:hover{
+    background: #ce1829;
+}
+
+/*header end*/
+
+/*促销区*/
+

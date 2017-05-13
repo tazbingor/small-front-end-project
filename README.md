@@ -30,3 +30,9 @@
    > [预览](https://tazbingor.github.io/small-front-end-project/test05-page-plus/index.html)
 
 6. **<font color=#0099ff face="微软雅黑">实现电商首页</font>**
+   >趁热打铁再做一个
+   >1. 导航栏
+   >2. 分页显示区
+   >3. 页面至少三个区域
+   >
+   > [预览](https://tazbingor.github.io/small-front-end-project/test06-shopping-mall-home-page/index.html)

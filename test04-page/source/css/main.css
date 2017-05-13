@@ -1,0 +1,202 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*reset*/
+ul, ol {
+    list-style: none;
+}
+
+/*topbar*/
+#topbar {
+    background: #666;
+}
+
+#topbar > .inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#topbar > .inner::after, #topbar::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#topbar .logo {
+    float: left;
+}
+
+#topbar .logo > img {
+    vertical-align: top;
+    /*margin-left: 60px;*/
+}
+
+#topbar nav {
+    float: right;
+    margin-top: 20px;
+}
+
+/*topbar end*/
+
+/*banner 轮播*/
+#siteBanner{
+margin-top: 20px;
+}
+
+#siteBannerSlides .swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+}
+#siteBannerSlides > ul.slidesjs-pagination{
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+}
+
+#siteBannerSlides .slidesjs-container{
+    position: relative;
+    z-index: 1;
+}
+
+#siteBannerSlides{
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#siteBannerSlides .slidesjs-navigation{
+    position: absolute;
+    top:50%;
+    left: 0;
+    z-index: 2;
+
+}
+
+#siteBannerSlides > ul .slidesjs-pagination-item{
+    margin: 5px;
+}
+
+
+#siteBannerSlides .slidesjs-next{
+    left:auto;
+    right:0;
+}
+/*banner end*/
+
+
+/*introduce*/
+#introduce{
+    margin-left: 24px;
+}
+
+#introduce ul{
+    max-width: 960px;
+    margin:0 auto;
+}
+
+#introduce ul>li{
+    display: flex;
+    margin: 24px 0;
+    justify-content: space-between;
+    align-items: center;
+    /*text-align: center;*/
+    /*font-size: 40px;*/
+}
+
+#introduce ul>li>p{
+    flex-grow:1;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*文字与图片错落*/
+#introduce ul>li:nth-child(odd)>p{
+    order: 2;
+}
+
+#introduce ul>li:nth-child(odd)>img{
+    order: 1;
+}
+
+#introduce ul>li:nth-child(even)>p{
+    order: 1;
+}
+
+#introduce ul>li:nth-child(even)>img{
+    order: 2;
+}
+
+/*introduce end*/
+
+/*products*/
+
+#products{
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background: #ddd;
+}
+
+#products >.inner{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#products h2{ margin-bottom: 1em; }
+
+#products ul{
+    max-width: 500px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#products ul>li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*products end*/
+
+#album {
+    padding: 2em 0;
+}
+
+#album > .inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+#album ul {
+    display: flex;
+    align-items: center;
+}
+
+/* footer */
+body > footer {
+    background: #ddd;
+    padding: 1em 0;
+    text-align: center;
+}

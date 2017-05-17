@@ -7,10 +7,16 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
 
+
+
     <script>
 
     //ajax request
-    let request = new XMLHttpRequest();
+    btn.onclick = function () {
+        var request = new XMLHttpRequest();
+        request.open('GET','/page01.json');
+        request.send();
+    }
 
 
 
@@ -19,6 +25,10 @@
 
 </head>
 <body>
+
+ <button id="btn">加载</button>
+
+
 
 </body>
 </html>

@@ -9,26 +9,24 @@
 
 
 
-    <script>
 
-    //ajax request
-    btn.onclick = function () {
-        var request = new XMLHttpRequest();
-        request.open('GET','/page01.json');
-        request.send();
-    }
-
-
-
-
-    </script>
 
 </head>
 <body>
 
  <button id="btn">加载</button>
 
+ <script>
 
+     //ajax request
+     btn.onclick = function () {
+         var request = new XMLHttpRequest();
+         request.open('GET','/page01.json');
+         request.send();
+     }
+
+
+ </script>
 
 </body>
 </html>

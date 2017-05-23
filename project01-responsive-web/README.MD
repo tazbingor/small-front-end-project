@@ -1,8 +1,8 @@
 #真正的响应式页面
 
 ###项目中使用的新技能
- >1. HTML5新标签: <i> <em>
- >
+ >1. HTML5新标签: i em nav
+ >2. Normalize.css
  >
 
 ###1
@@ -17,4 +17,7 @@
 1. 更新浏览器版本: [browsehappy](https://browsehappy.com/)
 2. 约定俗成的命名方式,class用-分割,id使用驼峰命名法
 3. 何时嵌入图片到页面？必要的img，若是可有可无的图片直接用标签style引入
+
+###3
+1. px en rem 的区别
 

@@ -133,10 +133,8 @@ header .top ul li a{
 /*网站主要内容*/
 .container{
     width: 100%;
+    background: #666;
 }
-
-
-
 
 
 /*footer*/

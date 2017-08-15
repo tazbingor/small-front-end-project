@@ -207,16 +207,16 @@ header .main ul li a.active {
     text-align: left;
 }
 
-.trans-data span.trans-money{
+.trans-data span.trans-money {
     font-size: 2.2rem;
     color: #ff9900;
     letter-spacing: 3px;
-    margin:0 1rem;
+    margin: 0 1rem;
     padding: 0 1rem;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .trans-data span {
@@ -225,22 +225,45 @@ header .main ul li a.active {
     color: #FFF;
 }
 
-
-
-.trans-report{
+.trans-report {
     text-align: right;
 }
 
-
-.trans-report a{
+.trans-report a {
     display: inline-block;
-    padding:1rem;
+    padding: 1rem;
     line-height: 3rem;
     color: #fff;
 }
 
-trans-report a{
+trans-report a {
     display: inline-block;
+}
+
+/*
+平台特点
+ */
+.feature {
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 0;
+
+}
+
+.feature .item{
+    display: inline-block;
+    width:calc(33.3333333333333% - 3rem);
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #CCC;
+}
+
+/*
+轮播广告
+ */
+.ad {
+    display: none;
 }
 
 /*

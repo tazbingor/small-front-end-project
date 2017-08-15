@@ -124,7 +124,6 @@ header .top ul li + li {
     border-left: 1px solid #999;
     margin-left: -3px;
 
-
 }
 
 header .top ul li a {
@@ -137,11 +136,10 @@ header .top ul li a {
 
 header .top ul li a:hover,
 header .top ul li a:active,
-header .top ul li a.active{
+header .top ul li a.active {
     color: #f0ede9;
     background-color: #ffb300;
 }
-
 
 /*
 主导航样式
@@ -164,9 +162,9 @@ header .main ul li {
     border-left: 1px solid #f0ede9;
 }
 
-header .main ul li a{
+header .main ul li a {
     display: inline-block;
-    padding: 0  3rem;
+    padding: 0 3rem;
     font-size: 1.5rem;
     line-height: 5.0rem;
 
@@ -176,12 +174,10 @@ header .main ul li a{
 
 header .main ul li a:hover,
 header .main ul li a:active,
-header .main ul li a.active{
+header .main ul li a.active {
     color: #ffb300;
     background-color: #f8f6f1;
 }
-
-
 
 /*
 网站主要内容
@@ -221,16 +217,17 @@ header .main ul li a.active{
 footer 底部导航
 */
 footer {
-    width:100%;
-    padding:3rem 0 5rem;
+    width: 100%;
+    padding: 3rem 0 5rem;
     background: #FFF;
 
 }
-footer ul li{
+
+footer ul li {
     display: inline-block;
 }
 
-footer ul li .icon{
+footer ul li .icon {
     display: inline-block;
     text-indent: -999rem;
     margin-right: 1.5rem;
@@ -239,8 +236,50 @@ footer ul li .icon{
     overflow: hidden;
 }
 
-footer ul li .icon-zfywxkz{
+footer ul li .icon-zfywxkz {
     width: 38px;
-    height:24px;
+    height: 27px;
     background-position: -369px -45px;
 }
+
+footer ul li .icon-picrz {
+    width: 78px;
+    height: 27px;
+    background-position: -110px -96px;
+}
+
+footer ul li .icon-visayz {
+    width: 38px;
+    height: 27px;
+    background-position: -426px -90px;
+
+}
+
+footer ul li .icon-versignjmfw {
+    width: 65px;
+    height: 27px;
+    margin-right: 13px;
+    background-position: -401px -186px;
+}
+
+footer ul li .icon-wlgs {
+    width: 22px;
+    height: 27px;
+    background-position: -48px -48px;
+}
+
+footer ul li .icon-dzswxhrz {
+    width: 75px;
+    height: 27px;
+    background-position: 0 -320px;
+}
+
+footer ul li .icon-whgs{
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    background: url("https://os.alipayobjects.com/rmsportal/lybcjqloSPjMAFg.png") no-repeat;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+}
+

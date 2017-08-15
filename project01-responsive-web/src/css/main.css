@@ -72,66 +72,99 @@ li {
 /*=========
 浏览器更新提示
 =========*/
-.browserupgrade{
-    margin:0;
+.browserupgrade {
+    margin: 0;
     padding: 1rem;
     background: #CCC;
 }
 
 /*自定义页面样式*/
-body{
+body {
     font-size: 1.2rem;
     line-height: 1.5;
     background-color: #f7f7f7;
 }
 
-a{
+a {
     color: #666;
     text-decoration: none;
 }
 
-a:hover, a:active{
+a:hover, a:active {
     color: #0ae;
     text-decoration: underline;
 }
 
 /*topbar*/
-header{
-    width:100%;
+header {
+    width: 100%;
 }
 
-header .top{
+header .top {
     line-height: 3rem;
-    padding:0 1.5rem;
+    padding: 0 1.5rem;
     color: #fff;
     background: #555;
     border-bottom: 1px #ecc000 solid;
 }
 
-header .top .tel{
+header .top .tel {
     float: left;
 }
 
-header .top ul{
+header .top ul {
     text-align: right;
 }
 
-header .top ul li{
+header .top ul li {
     display: inline-block;
-}
-header .top ul li + li{
-    border-left: 1px solid #999;
-    margin-left:-3px;
 }
 
-header .top ul li a{
+header .top ul li + li {
+    border-left: 1px solid #999;
+    margin-left: -3px;
+
+}
+
+header .top ul li a {
     display: inline-block;
-    padding:0 1.5rem;
+    padding: 0 1.5rem;
     color: #fff;
 }
 
-/*网站主要内容*/
-.container{
+/*
+主导航样式
+ */
+header .main {
+    padding: 0;
+}
+
+header .main .brand {
+    float: left;
+    padding: 1rem 1.5rem;
+}
+
+header .main ul {
+    text-align: right;
+}
+
+header .main ul li {
+    display: inline-block;
+    border-left: 1px solid #f0ede9;
+}
+
+header .main ul li a{
+    display: inline-block;
+    padding: 0  3rem;
+
+}
+
+
+
+/*
+网站主要内容
+*/
+.container {
     width: 100%;
     background: #666;
 }
@@ -139,25 +172,31 @@ header .top ul li a{
 /*
 交易信息
  */
-.transaction{
-    width:100%;
+.transaction {
+    width: 100%;
     background: #7C7365;
 }
 
-.trans-content{
-    max-width:90%;
-    margin:0 auto;
+.trans-content {
+    max-width: 90%;
+    margin: 0 auto;
     font-size: 1.5rem;
 }
 
+.trans-data {
+    float: left;
+    padding: 1rem;
+    text-align: left;
+}
 
-
-
-
-
+.trans-data span {
+    display: inline-block;
+    line-height: 3rem;
+    color: #FFF;
+}
 
 /*footer*/
-footer{
+footer {
     width: 100%;
     background: #666;
 }

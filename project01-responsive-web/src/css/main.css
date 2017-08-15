@@ -124,13 +124,24 @@ header .top ul li + li {
     border-left: 1px solid #999;
     margin-left: -3px;
 
+
 }
 
 header .top ul li a {
     display: inline-block;
     padding: 0 1.5rem;
     color: #fff;
+    text-decoration: none;
+
 }
+
+header .top ul li a:hover,
+header .top ul li a:active,
+header .top ul li a.active{
+    color: #f0ede9;
+    background-color: #ffb300;
+}
+
 
 /*
 主导航样式
@@ -156,7 +167,18 @@ header .main ul li {
 header .main ul li a{
     display: inline-block;
     padding: 0  3rem;
+    font-size: 1.5rem;
+    line-height: 5.0rem;
 
+    color: #7C7a65;
+    text-decoration: none;
+}
+
+header .main ul li a:hover,
+header .main ul li a:active,
+header .main ul li a.active{
+    color: #ffb300;
+    background-color: #f8f6f1;
 }
 
 

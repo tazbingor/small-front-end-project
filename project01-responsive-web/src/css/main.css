@@ -136,6 +136,25 @@ header .top ul li a{
     background: #666;
 }
 
+/*
+交易信息
+ */
+.transaction{
+    width:100%;
+    background: #7C7365;
+}
+
+.trans-content{
+    max-width:90%;
+    margin:0 auto;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
 
 /*footer*/
 footer{

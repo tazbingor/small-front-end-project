@@ -223,6 +223,10 @@ footer {
 
 }
 
+footer ul {
+    text-align: center;
+}
+
 footer ul li {
     display: inline-block;
 }
@@ -274,12 +278,17 @@ footer ul li .icon-dzswxhrz {
     background-position: 0 -320px;
 }
 
-footer ul li .icon-whgs{
+footer ul li .icon-whgs {
     width: 30px;
     height: 30px;
     margin-right: 0;
     background: url("https://os.alipayobjects.com/rmsportal/lybcjqloSPjMAFg.png") no-repeat;
     -webkit-background-size: 30px;
     background-size: 30px;
+}
+
+footer p {
+    text-align: center;
+    color: #999;
 }
 

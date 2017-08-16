@@ -392,15 +392,15 @@ trans-report a {
     font-size: 1.2rem;
     font-style: normal;
     color: #999;
-    
+
 }
 
-.product .product-content .item .info{
+.product .product-content .item .info {
     float: left;
-    width:48%;
+    width: 48%;
     padding: 1rem;
-    border-left:1px solid #EEEEEE;
-    border-right:1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
     font-size: 14px;
 
 }
@@ -409,34 +409,44 @@ trans-report a {
     float: left;
     display: inline-block;
     text-align: center;
-    width:56%;
+    width: 56%;
 }
 
-.product .product-content .item .info p:last-child{
-    width:40%;
+.product .product-content .item .info p:last-child {
+    width: 40%;
 }
 
-
-.product .product-content .item .info p span{
+.product .product-content .item .info p span {
     display: block;
     font-size: 2.4rem;
     color: #ff9900;
 }
 
-.product .product-content .item .info p span i{
-    font-size:1.2rem;
-    font-style:normal;
+.product .product-content .item .info p span i {
+    font-size: 1.2rem;
+    font-style: normal;
     color: #999;
 
 }
 
-
-.product .product-content .item .buy{
+.product .product-content .item .buy {
     float: left;
-    width:calc(22% - 4.4rem);
+    width: calc(22% - 4.4rem);
     padding: 1rem;
 }
 
+.product .product-content .item .buy a {
+    display: block;
+    width: 90%;
+    margin: 1.5rem auto;
+    max-width: 12rem;
+    line-height: 4rem;
+    text-align:center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff9900;
+    border-radius: 5px;
+}
 
 /*
 轮播广告

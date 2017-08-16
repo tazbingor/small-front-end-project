@@ -284,6 +284,38 @@ trans-report a {
 }
 
 /*
+最新公告
+ */
+.notice {
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.notice a {
+    float: left;
+    display: inline-block;
+    width: 70%;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.notice a:first-child {
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.notice a:first-child:before{
+    content: '最新公告: \00a0\00a0';
+    color: #aaa;
+}
+
+
+/*
 轮播广告
  */
 .ad {

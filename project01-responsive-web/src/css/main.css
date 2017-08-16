@@ -485,7 +485,6 @@ trans-report a {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 
-
     width: 20%;
     height: 35px;
     background: url("../img/logo@1x.png") no-repeat left;

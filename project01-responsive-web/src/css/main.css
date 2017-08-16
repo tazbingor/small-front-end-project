@@ -441,7 +441,7 @@ trans-report a {
     margin: 1.5rem auto;
     max-width: 12rem;
     line-height: 4rem;
-    text-align:center;
+    text-align: center;
     text-decoration: none;
     color: #fff;
     background-color: #ff9900;
@@ -449,11 +449,11 @@ trans-report a {
 }
 
 .product .product-content .item .buy a:hover,
-.product .product-content .item .buy a:active{
+.product .product-content .item .buy a:active {
     background-color: #ffc468;
 }
 
-.product .product-content .item .buy a:disabled{
+.product .product-content .item .buy a:disabled {
     background-color: #ccc !important;
     cursor: not-allowed;
 }
@@ -465,8 +465,15 @@ trans-report a {
     display: none;
 }
 
+
 /*
-footer 底部导航
+底部导航
+ */
+
+
+
+/*
+footer 底部
 */
 footer {
     width: 100%;

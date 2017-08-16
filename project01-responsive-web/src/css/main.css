@@ -184,7 +184,7 @@ header .main ul li a.active {
 */
 .container {
     width: 100%;
-    background: #666;
+    /*background: #666;*/
 }
 
 /*
@@ -250,13 +250,37 @@ trans-report a {
 
 }
 
-.feature .item{
+.feature .item {
     display: inline-block;
-    width:calc(33.3333333333333% - 3rem);
+    width: calc(33.3333333333333% - 3rem);
     padding: 1rem;
     font-size: 1.4rem;
     background-color: #fff;
     box-shadow: 0 0 4px #CCC;
+}
+
+.feature .item + .item {
+    margin-left: 1.5rem;
+}
+
+.feature .item h3 {
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    font-size: 3.3rem;
+    text-align: center;
+    color: #ff9900;
+}
+
+.feature .item p {
+    display: inline-block;
+    width: 55%;
+    margin: 0;
+    padding: 0;
+    color: #999;
+
 }
 
 /*

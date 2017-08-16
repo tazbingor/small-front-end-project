@@ -448,6 +448,16 @@ trans-report a {
     border-radius: 5px;
 }
 
+.product .product-content .item .buy a:hover,
+.product .product-content .item .buy a:active{
+    background-color: #ffc468;
+}
+
+.product .product-content .item .buy a:disabled{
+    background-color: #ccc !important;
+    cursor: not-allowed;
+}
+
 /*
 轮播广告
  */

@@ -503,13 +503,18 @@ trans-report a {
 
 }
 
+.footer-content ul li.title {
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
 /*
 footer 底部
 */
 footer {
     width: 100%;
     padding: 3rem 0 5rem;
-    background: #FFF;
+    background: #EEEEEE;
 
 }
 

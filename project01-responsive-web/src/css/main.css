@@ -141,6 +141,26 @@ header .top ul li a.active {
     background-color: #ffb300;
 }
 
+@media only screen and (max-width: 800px) {
+    header .top {
+        background-color: green;
+    }
+}
+
+@media only screen and (max-width: 481px) and (max-width: 800px) {
+    header .top ul li a {
+        color: red;
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header .top ul li a {
+        color: blues;
+
+    }
+}
+
 /*
 主导航样式
  */
@@ -586,4 +606,6 @@ footer p {
     text-align: center;
     color: #999;
 }
+
+
 

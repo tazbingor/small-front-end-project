@@ -141,20 +141,20 @@ header .top ul li a.active {
     background-color: #ffb300;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 50em) {
     header .top {
         background-color: green;
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 800px) {
+@media only screen and (min-width: 30.065em) and (max-width: 50em) {
     header .top ul li a {
         color: red;
 
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30em) {
     header .top ul li a {
         color: blue;
 

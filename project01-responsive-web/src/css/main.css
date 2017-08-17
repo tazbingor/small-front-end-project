@@ -142,21 +142,21 @@ header .top ul li a.active {
 }
 
 @media only screen and (max-width: 50em) {
-    header .top {
-        background-color: green;
+    header .top ul li a {
+        padding:0 1rem;
+
     }
 }
 
 @media only screen and (min-width: 30.065em) and (max-width: 50em) {
-    header .top ul li a {
-        color: red;
 
-    }
 }
 
 @media only screen and (max-width: 30em) {
-    header .top ul li a {
-        color: blue;
+    header .top .tel,
+    header .top .ul li:nth-child(3),
+    header .top .ul li:nth-child(4){
+        display: none;
 
     }
 }

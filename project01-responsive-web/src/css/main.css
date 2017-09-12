@@ -203,7 +203,7 @@ header .main ul li a.active {
     background-color: #f8f6f1;
 }
 
-@media only screen and(max-width: 50em){
+@media only screen and (max-width: 50em){
     header .main .brand{
         float: none;
         display: block;
@@ -222,6 +222,20 @@ header .main ul li a.active {
     header .main ul li a {
         padding: 0 1.5rem;
     }
+}
+
+@media only screen and (max-width: 30em) {
+    header .main ul li{
+        line-height: 3rem;
+    }
+    header .main ul li:first-child{
+        display: none;
+    }
+    header .main ul li a{
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
+
 }
 
 /*

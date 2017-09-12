@@ -143,15 +143,15 @@ header .top ul li a.active {
 
 @media only screen and (max-width: 50em) {
     header .top ul li a {
-        padding:0 1rem;
+        padding: 0 1rem;
 
     }
 }
 
-@media only screen and (min-width: 30.065em) and (max-width: 50em) {
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
 
     /*header .top ul li a {*/
-        /*padding:0 1rem;*/
+    /*padding:0 1rem;*/
     /*}*/
 
 }
@@ -159,7 +159,7 @@ header .top ul li a.active {
 @media only screen and (max-width: 30em) {
     header .top .tel,
     header .top .ul li:nth-child(3),
-    header .top .ul li:nth-child(4){
+    header .top .ul li:nth-child(4) {
         display: none;
 
     }
@@ -188,8 +188,9 @@ header .main ul li {
 
 header .main ul li a {
     display: inline-block;
-    padding: 0 3rem;
+    padding: 0 2.5rem;
     font-size: 1.5rem;
+    font-weight: bold;
     line-height: 5.0rem;
 
     color: #7C7a65;
@@ -203,14 +204,15 @@ header .main ul li a.active {
     background-color: #f8f6f1;
 }
 
-@media only screen and (max-width: 50em){
-    header .main .brand{
+@media only screen and (max-width: 50em) {
+    header .main .brand {
         float: none;
         display: block;
-        padding:0;
+        padding: 0;
         margin: 1.5rem auto 0.5rem;
         text-align: center;
     }
+
     header .main ul {
         text-align: center;
     }
@@ -225,13 +227,15 @@ header .main ul li a.active {
 }
 
 @media only screen and (max-width: 30em) {
-    header .main ul li{
+    header .main ul li {
         line-height: 3rem;
     }
-    header .main ul li:first-child{
+
+    header .main ul li:first-child {
         display: none;
     }
-    header .main ul li a{
+
+    header .main ul li a {
         font-weight: normal;
         padding: 0 0.5rem;
     }
@@ -266,6 +270,12 @@ header .main ul li a.active {
     text-align: left;
 }
 
+.trans-data span {
+    display: inline-block;
+    line-height: 3rem;
+    color: #fff;
+}
+
 .trans-data span.trans-money {
     font-size: 2.2rem;
     color: #ff9900;
@@ -276,13 +286,10 @@ header .main ul li a.active {
     -moz-border-radius: 3px;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 2px 1px #333 inset;
 }
 
-.trans-data span {
-    display: inline-block;
-    line-height: 3rem;
-    color: #FFF;
-}
+
 
 .trans-report {
     text-align: right;
@@ -295,9 +302,47 @@ header .main ul li a.active {
     color: #fff;
 }
 
-trans-report a {
-    display: inline-block;
+
+@media only screen and (max-width: 50em) {
+
+    .trans-data {
+        padding: 1rem 0.5rem;
+    }
+
+    .trans-data span {
+        font-size: 1.2rem;
+    }
+
+    .trans-data span.trans-money {
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0;
+        letter-spacing: inherit;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .trans-report a {
+        font-size: 1.2rem;
+    }
 }
+
+@media only screen and (max-width: 30em) {
+
+    .transaction {
+        padding: 0.5rem 0;
+    }
+
+    .trans-data, .trans-report {
+        float: none;
+        text-align: center;
+    }
+
+    .trans-data, .trans-report a{
+        padding: 0;
+    }
+}
+
 
 /*
 平台特点
@@ -395,7 +440,7 @@ trans-report a {
     font-size: 1.4rem;
     background-color: #fff;
     border-top: 2px solid #ff9900;
-    border-shadow: 0 0 4px #CCC;
+    box-shadow: 0 0 4px #CCC;
 }
 
 .product h2 {

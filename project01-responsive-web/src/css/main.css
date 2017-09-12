@@ -289,8 +289,6 @@ header .main ul li a.active {
     box-shadow: 1px 2px 1px #333 inset;
 }
 
-
-
 .trans-report {
     text-align: right;
 }
@@ -301,7 +299,6 @@ header .main ul li a.active {
     line-height: 3rem;
     color: #fff;
 }
-
 
 @media only screen and (max-width: 50em) {
 
@@ -338,11 +335,10 @@ header .main ul li a.active {
         text-align: center;
     }
 
-    .trans-data, .trans-report a{
+    .trans-data, .trans-report a {
         padding: 0;
     }
 }
-
 
 /*
 平台特点
@@ -385,6 +381,19 @@ header .main ul li a.active {
     padding: 0;
     color: #999;
 
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
+    .feature .item h3, .feature .item p {
+        display: block;
+        width: 100%;
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .feature .item p {
+        font-size: 1.2rem;
+    }
 }
 
 /*

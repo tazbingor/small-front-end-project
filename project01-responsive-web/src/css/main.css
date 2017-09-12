@@ -396,6 +396,23 @@ header .main ul li a.active {
     }
 }
 
+@media only screen and (max-width: 30em) {
+
+    .feature {
+        width: 96%;
+        margin: 1rem auto;
+    }
+
+    .feature .item {
+        display: block;
+        width: auto;
+    }
+
+    .feature .item + .item {
+        margin: 1rem 0 0;
+    }
+}
+
 /*
 最新公告
  */

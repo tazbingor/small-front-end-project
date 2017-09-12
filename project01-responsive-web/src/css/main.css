@@ -604,8 +604,8 @@ header .main ul li a.active {
     cursor: not-allowed;
 }
 
-@media only screen and (max-width: 50em){
-    .product h2{
+@media only screen and (max-width: 50em) {
+    .product h2 {
         float: none;
         width: 100%;
         /*margin: 2rem;*/
@@ -613,18 +613,18 @@ header .main ul li a.active {
         font-size: 2.2rem;
     }
 
-    .product h2 em:first-child{
-        margin-top:0;
+    .product h2 em:first-child {
+        margin-top: 0;
     }
 
-    .product h2 em{
+    .product h2 em {
         display: inline;
         font-size: 1.2rem;
     }
 
-    .product .product-content{
-        float:none;
-        width:100%;
+    .product .product-content {
+        float: none;
+        width: 100%;
     }
 
     .product .product-content .item h3 {
@@ -650,25 +650,26 @@ header .main ul li a.active {
 
 }
 
-@media  only screen and (max-width: 30em) {
-    .product{
+@media only screen and (max-width: 30em) {
+    .product {
         width: 96%;
     }
-    .product h2 em:first-child:before{
+
+    .product h2 em:first-child:before {
         content: "";
         display: table;
     }
 
-    .product .product-content .item h3 em{
+    .product .product-content .item h3 em {
         font-size: 2rem;
         margin-right: 0;
     }
 
-    .product .product-content .item .info{
-        float:right;
+    .product .product-content .item .info {
+        float: right;
         width: 70%;
-        padding:1rem 0;
-        border:none;
+        padding: 1rem 0;
+        border: none;
     }
 
     .product .product-content .item .info p span {
@@ -684,11 +685,10 @@ header .main ul li a.active {
 
     .product .product-content .item .buy a {
         margin-top: 0;
+
         max-width: 26rem;
     }
 }
-
-
 
 /*
 轮播广告
@@ -738,6 +738,25 @@ header .main ul li a.active {
 .footer-content ul li.title {
     font-size: 1.6rem;
     line-height: 3rem;
+}
+
+@media only screen and (max-width: 50em) {
+    .footer-content .brand {
+        display: none;
+    }
+
+    .footer-content ul{
+        width:20%;
+    }
+
+    .footer-content ul li{
+        font-size:1.2rem;
+        line-height:2rem;
+    }
+    .footer-content ul li.title{
+        font-size:1.4rem;
+        line-height: 2.5rem;
+    }
 }
 
 /*

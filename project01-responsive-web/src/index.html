@@ -5,6 +5,10 @@
     <title>理财宝</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./css/node_modules/normalize.css/normalize.css">
+
+    <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -41,7 +45,7 @@
 
 <div class="container">
 
-    <div class="transaction">
+    <div class="transaction clearfix">
         <div class="trans-content">
             <div class="trans-data">
                 <span>平台成交金额</span>
@@ -69,18 +73,20 @@
 
     <!--广告图-->
     <section class="ad">
-        <div class="item">
-            <img src="./img/ad001.png" alt="">
-        </div>
+        <div class="owl-carousel owl-theme">
 
-        <div class="item">
-            <img src="./img/ad002.png" alt="">
-        </div>
+            <div class="item">
+                <img src="./img/ad001.png" alt="">
+            </div>
 
-        <div class="item">
-            <img src="./img/ad003.png" alt="">
-        </div>
+            <div class="item">
+                <img src="./img/ad002.png" alt="">
+            </div>
 
+            <div class="item">
+                <img src="./img/ad003.png" alt="">
+            </div>
+        </div>
     </section>
 
     <!--功能亮点介绍-->
@@ -308,5 +314,6 @@
 
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/owl.carousel.2.1.0/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

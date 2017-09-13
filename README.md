@@ -11,10 +11,10 @@
    >[源码](https://github.com/tazbingor/small-front-end-project/blob/master/test02-simple-page/index.html)
 
 3. 实现小画板
-   
+
 4. 实现一个官网页面
    > **仅仅只是一个DEMO,用来熟悉开发流程**
-   > 
+   >
    > [预览](https://tazbingor.github.io/small-front-end-project/test04-page/source/index.html)
    > [源码](https://github.com/tazbingor/small-front-end-project/blob/master/test04-page/source/index.html)
 
@@ -36,3 +36,7 @@
    >3. 页面至少三个区域
    >
    > [预览](https://tazbingor.github.io/small-front-end-project/test06-shopping-mall-home-page/index.html)
+
+7. 项目:<font color=#0099ff face="微软雅黑">理财网站</font>
+   > [预览](https://tazbingor.github.io/small-front-end-project/project01-responsive-web/src/index.html)
+

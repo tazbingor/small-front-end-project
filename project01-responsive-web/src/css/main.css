@@ -352,8 +352,8 @@ header .main ul li a.active {
 
 .feature .item {
     display: inline-block;
-    width: calc(33.3333333333333% - 3rem);
-    padding: 1rem;
+    width: calc(33.33333% - 3rem);
+    padding: 1rem 1rem 1rem 1rem;
     font-size: 1.4rem;
     background-color: #fff;
     box-shadow: 0 0 4px #CCC;

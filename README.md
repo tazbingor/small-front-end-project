@@ -40,3 +40,7 @@
 7. 项目:<font color=#0099ff face="微软雅黑">理财网站</font>
    > [预览](https://tazbingor.github.io/small-front-end-project/project01-responsive-web/src/index.html)
 
+8. jquery表单验证
+
+   ​
+

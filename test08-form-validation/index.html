@@ -20,16 +20,73 @@
     </div>
 
     <div class="form">
-        <form action="">
+        <form id="signup">
 
             <div class="input-wrap">
                 <label>姓名</label>
-                <input date-rule='pattern:"^[a-z0-9]$"|min:18|maxlength:10|minlength:2|required:false|numeric:false'
-                       type="text" class="input-control">
-                <div id="username-input-error" class="input-error">姓名格式输入有误</div>
+
+                <input data-rule='maxlength:18|minlength:1|required:true'
+
+                       name="name"
+                       type="text"
+                       class="input-control">
+
+                <div id="name-input-error" class="input-error">姓名格式输入有误,</div>
             </div>
 
 
+            <div class="input-wrap">
+                <label>用户名</label>
+
+                <input data-rule='pattern:"^[a-z0-9]*$"|maxlength:18|minlength:4'
+
+                       name="username"
+                       type="text"
+                       class="input-control">
+
+                <div id="username-input-error" class="input-error">用户名格式输入有误</div>
+            </div>
+
+            <div class="input-wrap">
+                <label>密码</label>
+
+                <input data-rule='maxlength:18|minlength:6'
+
+                       name="password"
+                       type="password"
+                       class="input-control">
+
+                <div id="password-input-error" class="input-error">密码格式输入有误</div>
+            </div>
+
+
+            <div class="input-wrap">
+                <label>年龄</label>
+
+                <input data-rule='min:18'
+
+                       name="age"
+                       type="text"
+                       class="input-control">
+
+                <div id="age-input-error" class="input-error">年龄格式输入有误</div>
+            </div>
+
+
+            <div class="input-wrap">
+                <label>一句话自我介绍</label>
+
+                <input data-rule='required:false|maxlength:1024'
+
+                       name="intro"
+                       type="text"
+                       class="input-control">
+
+                <div id="intro-input-error" class="input-error">自我介绍格式输入有误</div>
+            </div>
+
+
+            <button class="button-control" type="submit">注册</button>
         </form>
 
     </div>

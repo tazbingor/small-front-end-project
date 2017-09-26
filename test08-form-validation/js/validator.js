@@ -9,17 +9,22 @@ $(function () {
 
         this.is_valid = function (new_val) {
             var key;
-            val = new_val || val;
+            if (new_val !== undefined)
+                val = new_val;
+
             /*若不是必填项,且用户未填写任何内容则直接判定为合法*/
             if (!rule.required && !val)
                 return true;
+
             for (key in rule) {
                 /*防止重复检查*/
-                if (key === 'required')continue;
+                if (key === 'required')
+                    continue;
 
                 /*防止调用rule中相对应的方法*/
-                var result = this['validate_' + key]();
-                if (!result) return false;
+                var r = this['validate_' + key]();
+                if (!r)
+                    return false;
             }
             return true;
         }
@@ -35,14 +40,14 @@ $(function () {
         }
 
 
-        this.validate_maxLength = function () {
+        this.validate_maxlength = function () {
             preLength();
-            return val.length <= rule.maxLength;
+            return val.length <= rule.maxlength;
         }
 
-        this.validate_minLength = function () {
+        this.validate_minlength = function () {
             preLength();
-            return val.length >= rule.minLength;
+            return val.length >= rule.minlength;
         }
 
         this.validate_numeric = function () {

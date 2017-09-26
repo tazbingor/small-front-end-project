@@ -6,9 +6,13 @@ $(function () {
     'use strict';
 
     window.Input = function (selector) {
-        var $ele;
-        var me = this;
-        var rule = {};
+        var $ele
+            , $error_ele
+            , me = this
+            , rule =
+            {
+                required: true
+            };
 
         this.loadValidator = function () {
             var val = this.getVal();
@@ -21,17 +25,30 @@ $(function () {
 
         function init() {
             findEle();
+            get_error_ele();
             parseRule();
             me.loadValidator();
+            listen();
         }
 
         function listen() {
             $ele.on('blur', function () {
                 var valid = me.validator.is_valid(me.getVal());
-                // console.log('blur' + valid);
-                if(valid)
-                    $ele.next('.input-error')
+                console.log('blur' + valid);
+                if (valid)
+                    $error_ele.hide();
+                else
+                    $error_ele.show();
             });
+        }
+
+        function get_error_ele() {
+            $error_ele = $(get_error_selector());
+        }
+
+
+        function get_error_selector() {
+            return '#' + $ele.attr('name') + '-input-error';
         }
 
 
@@ -54,6 +71,8 @@ $(function () {
                 rule[item_arr[0]] = JSON.parse(item_arr[1]); //['min:18']
             }
         }
+
+        init();
     }
 
 })

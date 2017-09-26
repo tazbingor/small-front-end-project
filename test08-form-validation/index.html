@@ -24,9 +24,9 @@
 
             <div class="input-wrap">
                 <label>姓名</label>
-                <input date-rule="pattern:^[a-z0-9]$|min:18|maxlength:10|minlength:2|nullable:false|numeric:false"
+                <input date-rule='pattern:"^[a-z0-9]$"|min:18|maxlength:10|minlength:2|required:false|numeric:false'
                        type="text" class="input-control">
-                <div class="input-error">姓名格式输入有误</div>
+                <div id="username-input-error" class="input-error">姓名格式输入有误</div>
             </div>
 
 
@@ -38,6 +38,7 @@
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
 <script src="js/validator.js"></script>
+<script src="js/input.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

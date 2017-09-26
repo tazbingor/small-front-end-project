@@ -7,13 +7,31 @@ $(function () {
 
     window.Input = function (selector) {
         var $ele;
+        var me = this;
         var rule = {};
 
+        this.loadValidator = function () {
+            var val = this.getVal();
+            this.validator = new Validator(val, rule);
+
+        }
+        this.getVal = function () {
+            return $ele.val();
+        }
 
         function init() {
             findEle();
-
             parseRule();
+            me.loadValidator();
+        }
+
+        function listen() {
+            $ele.on('blur', function () {
+                var valid = me.validator.is_valid(me.getVal());
+                // console.log('blur' + valid);
+                if(valid)
+                    $ele.next('.input-error')
+            });
         }
 
 

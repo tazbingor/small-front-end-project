@@ -7,14 +7,14 @@ $(function () {
     'use strict';
 
     var validator = new Validator(' ', {
-       maxLength:5,
+       pattern:'^[a-zA-Z0-9]*$',
     });
 
     // var result = validator.validate_max();
     // var result = validator.validate_numeric();
-    var result = validator.validate_required();
+    // var result = validator.validate_pattern();
 
-    alert('result:' + result);
+    console.log('result:' + result);
 
 });
 

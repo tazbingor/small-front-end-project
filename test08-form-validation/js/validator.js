@@ -7,6 +7,22 @@ $(function () {
 
     window.Validator = function (val, rule) {
 
+        this.is_valid = function (new_val) {
+            var key;
+            val = new_val || val;
+            /*若不是必填项,且用户未填写任何内容则直接判定为合法*/
+            if (!rule.required && !val)
+                return true;
+            for (key in rule) {
+                /*防止重复检查*/
+                if (key === 'required')continue;
+
+                /*防止调用rule中相对应的方法*/
+                var result = this['validate_' + key]();
+                if (!result) return false;
+            }
+            return true;
+        }
 
         this.validate_max = function () {
             preMaxMin();
@@ -43,7 +59,7 @@ $(function () {
 
         this.validate_pattern = function () {
             var reg = new RegExp(rule.pattern);
-            return reg.text(val);
+            return reg.test(val);
 
         }
 
@@ -57,6 +73,5 @@ $(function () {
             val = val.toString();
         }
     }
-
 
 });

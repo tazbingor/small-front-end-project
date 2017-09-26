@@ -18,10 +18,11 @@ $(function () {
             var val = this.getVal();
             this.validator = new Validator(val, rule);
 
-        }
+        };
+
         this.getVal = function () {
             return $ele.val();
-        }
+        };
 
         function init() {
             findEle();
@@ -75,5 +76,4 @@ $(function () {
         init();
     }
 
-})
-;
+});

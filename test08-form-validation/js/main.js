@@ -3,17 +3,20 @@
  */
 //原则:只要有input包含data-rule的自定义属性,就必须接受验证
 
+$(function () {
+    'use strict';
 
-var validator = {};
-validator.validate_min = function (val, rule) {
+    var validator = new Validator(' ', {
+       maxLength:5,
+    });
 
-    return true;
-}
+    // var result = validator.validate_max();
+    // var result = validator.validate_numeric();
+    var result = validator.validate_required();
 
-validator.validate_maxlength = function (val, rule) {
+    alert('result:' + result);
 
-    return true;
-}
+});
 
 
 //选中所有input中的data-rule
@@ -23,3 +26,19 @@ validator.validate_maxlength = function (val, rule) {
 
 
 //验证
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
